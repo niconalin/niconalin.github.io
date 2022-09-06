@@ -1,0 +1,37 @@
+[
+    {
+        "firstName": "Nicolò",
+        "lastName": "Nalin",
+        "commanders": [
+            "Osgir"
+        ]
+    },
+    {
+        "firstName": "Giovanni",
+        "lastName": "Targa",
+        "commanders": [
+            "Faldorn"
+        ]
+    },
+    {
+        "firstName": "Martino",
+        "lastName": "Ilacqua",
+        "commanders": [
+            "Osgir"
+        ]
+    },
+    {
+        "firstName": "Enrico",
+        "lastName": "Manfredi",
+        "commanders": [
+            "Sythis"
+        ]
+    },
+    {
+        "firstName": "Lorenzo",
+        "lastName": "Balbo",
+        "commanders": [
+            "Osgir"
+        ]
+    }
+]
