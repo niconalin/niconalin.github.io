@@ -1,37 +1,41 @@
 [
     {
-        "firstName": "Nicolò",
-        "lastName": "Nalin",
+        "firstName": "Enrico",
         "commanders": [
-            "Osgir"
+            "Aesi",
+            "Dina",
+            "Kamiz"
         ]
     },
     {
         "firstName": "Giovanni",
-        "lastName": "Targa",
         "commanders": [
-            "Faldorn"
-        ]
-    },
-    {
-        "firstName": "Martino",
-        "lastName": "Ilacqua",
-        "commanders": [
-            "Osgir"
-        ]
-    },
-    {
-        "firstName": "Enrico",
-        "lastName": "Manfredi",
-        "commanders": [
-            "Sythis"
+            "Alela",
+            "Lonis",
+            "Orvar"
         ]
     },
     {
         "firstName": "Lorenzo",
-        "lastName": "Balbo",
         "commanders": [
-            "Osgir"
+            "Kykar",
+            "Nekusar"
+        ]
+    },
+    {
+        "firstName": "Martino",
+        "commanders": [
+            "Lathril",
+            "Prosper",
+            "Wilhelt"
+        ]
+    },
+    {
+        "firstName": "Nicolò",
+        "commanders": [
+            "Faldorn",
+            "Osgir",
+            "Sythis"
         ]
     }
 ]

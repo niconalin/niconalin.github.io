@@ -7,13 +7,6 @@ $(document).ready(async function () {
     }
     const players = await getPlayers();
 
-    //Fetch commanders from db
-    async function getCommanders() {
-        return fetch('./db/commanders.json')
-            .then((response) => response.json());
-    }
-    const commanders = await getCommanders();
-
     //Fetch chosen players from local storage
     const chosen_players = JSON.parse(localStorage.getItem('chosen_players'));
 
@@ -34,7 +27,7 @@ $(document).ready(async function () {
                 class: 'col-12 input-group'
             }).append(
                 $(document.createElement('span')).prop({
-                    class: 'col-3 input-group-text',
+                    class: 'col-4 input-group-text',
                 }).html(chosen_player)
             ).append(
                 $(document.createElement('select')).prop({
