@@ -32,8 +32,10 @@ $(document).ready(async function () {
         const values = Array.from(document.querySelectorAll('input[type=checkbox]:checked'))
             .map(item => item.value);
         const chosen_players = JSON.stringify(values);
+        const tier = document.querySelector('option:checked').value      
         localStorage.clear();
         localStorage.setItem('chosen_players', chosen_players);
+        localStorage.setItem('tier', tier);
     });
 });
 

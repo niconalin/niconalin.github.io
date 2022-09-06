@@ -2,40 +2,104 @@
     {
         "firstName": "Enrico",
         "commanders": [
-            "Aesi",
-            "Dina",
-            "Kamiz"
+            {
+                "1": [
+                    "Aesi"
+                ]
+            },
+            {
+                "2": [
+                    "Dina",
+                    "Sidisi"
+                ]
+            },
+            {
+                "3": [
+                    "Kamiz"
+                ]
+            },
+            {
+                "4": [
+                    "Osgir"
+                ]
+            }
         ]
     },
     {
         "firstName": "Giovanni",
         "commanders": [
-            "Alela",
-            "Lonis",
-            "Orvar"
-        ]
-    },
-    {
-        "firstName": "Lorenzo",
-        "commanders": [
-            "Kykar",
-            "Nekusar"
+            {
+                "1": [
+                    "Araumi"
+                ]
+            },
+            {
+                "2": [
+                    "Dina"
+                ]
+            },
+            {
+                "3": [
+                    "Kamiz"
+                ]
+            },
+            {
+                "4": [
+                    "Osgir",
+                    "Sythis"
+                ]
+            }
         ]
     },
     {
         "firstName": "Martino",
         "commanders": [
-            "Lathril",
-            "Prosper",
-            "Wilhelt"
+            {
+                "1": [
+                    "Aesi"
+                ]
+            },
+            {
+                "2": [
+                    "Prosper"
+                ]
+            },
+            {
+                "3": [
+                    "Kamiz"
+                ]
+            },
+            {
+                "4": [
+                    "Osgir"
+                ]
+            }
         ]
     },
     {
         "firstName": "Nicolò",
         "commanders": [
-            "Faldorn",
-            "Osgir",
-            "Sythis"
+            {
+                "1": [
+                    "Aesi",
+                    "Faldorn"
+                ]
+            },
+            {
+                "2": [
+                    "Kykar"
+                ]
+            },
+            {
+                "3": [
+                    "Kamiz"
+                ]
+            },
+            {
+                "4": [
+                    "Osgir"
+                ]
+            }
         ]
     }
 ]

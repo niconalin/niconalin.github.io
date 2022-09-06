@@ -10,11 +10,15 @@ $(document).ready(async function () {
     //Fetch chosen players from local storage
     const chosen_players = JSON.parse(localStorage.getItem('chosen_players'));
 
+    //Fetch chosen tier from local storage
+    const chosen_tier = JSON.parse(localStorage.getItem('tier'));
+
     chosen_players.forEach(chosen_player => {
         var options = [];
         players.forEach(player => {
             if (chosen_player == player.firstName) {
-                player.commanders.forEach(commander => {
+                var commanders = player.commanders[chosen_tier-1];
+                commanders[chosen_tier].forEach(commander => {
                     const option = document.createElement('option');
                     option.value = commander
                     option.innerHTML = commander
