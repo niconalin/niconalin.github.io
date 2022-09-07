@@ -25,9 +25,9 @@ $(document).ready(async function () {
             )
         );
     });
-});
 
-$("#submitButton").click(function () {
-    const first = document.querySelector('input[type=radio]:checked').value
-    localStorage.setItem('first', first);
+    $("#submitButton").click(function () {
+        const first = document.querySelector('input[type=radio]:checked').value
+        localStorage.setItem('first', first);
+    });
 });

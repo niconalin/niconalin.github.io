@@ -17,7 +17,7 @@ $(document).ready(async function () {
         var options = [];
         players.forEach(player => {
             if (chosen_player == player.firstName) {
-                var commanders = player.commanders[chosen_tier-1];
+                var commanders = player.commanders[chosen_tier - 1];
                 commanders[chosen_tier].forEach(commander => {
                     const option = document.createElement('option');
                     option.value = commander
@@ -40,11 +40,12 @@ $(document).ready(async function () {
             )
         );
     });
-});
 
-$("#submitButton").click(function () {
-    const values = Array.from(document.querySelectorAll('option:checked'))
-        .map(item => item.value);
-    const chosen_commanders = JSON.stringify(values);
-    localStorage.setItem('chosen_commanders', chosen_commanders);
+
+    $("#submitButton").click(function () {
+        const values = Array.from(document.querySelectorAll('option:checked'))
+            .map(item => item.value);
+        const chosen_commanders = JSON.stringify(values);
+        localStorage.setItem('chosen_commanders', chosen_commanders);
+    });
 });
