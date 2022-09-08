@@ -1,5 +1,4 @@
 $(document).ready(async function () {
-
     async function getPlayers() {
         return fetch('./db/players.json')
             .then((response) => response.json());
@@ -27,15 +26,21 @@ $(document).ready(async function () {
             )
         );
     });
+    
 
     $("#submitButton").click(function () {
         const values = Array.from(document.querySelectorAll('input[type=checkbox]:checked'))
             .map(item => item.value);
+        if (values.length < 2) {
+            alert("Scegliere almeno 2 giocatori!");
+            return;
+        }
         const chosen_players = JSON.stringify(values);
         const tier = document.querySelector('option:checked').value      
         localStorage.clear();
         localStorage.setItem('chosen_players', chosen_players);
         localStorage.setItem('tier', tier);
+        window.location = "/choose_commanders.html";
     });
 });
 

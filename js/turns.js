@@ -11,4 +11,8 @@ $(document).ready(async function () {
             $("#turn").html(current_turn - 1);
         }
     })
+
+    $("#submitButton").click( function () {
+        localStorage.setItem("turns", parseInt($("#turn").html()));
+    });
 });

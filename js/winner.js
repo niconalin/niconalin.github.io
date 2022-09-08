@@ -1,7 +1,6 @@
 $(document).ready(async function () {
 
-    //Fetch chosen players from local storage
-    const chosen_players = JSON.parse(localStorage.getItem('chosen_players'));
+    const chosen_players = JSON.parse(localStorage.getItem("chosen_players"));
 
     chosen_players.forEach(chosen_player => {
         $("#players").append(
@@ -27,13 +26,13 @@ $(document).ready(async function () {
 
     $("#submitButton").click(function () {
         if (document.querySelectorAll('input[type=radio]:checked').length != 1) {
-            alert("Tutti ultimi??")
+            alert("Vince lo sport?")
             return;
         }
         else {
-            const first = document.querySelector('input[type=radio]:checked').value;
-            localStorage.setItem('first', first);
-            window.location = "turns.html";
+            const winner = document.querySelector('input[type=radio]:checked').value;
+            localStorage.setItem('winner', winner);
+            window.location = "match.html";
         }
     });
 });
